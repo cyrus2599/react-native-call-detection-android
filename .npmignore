@@ -1,0 +1,34 @@
+# Source files (included via package.json "files" field, but let's be explicit)
+# We want to include: android/, src/, lib/, app.plugin.js, README.md
+
+# Exclude development files
+example/
+test*.js
+tsconfig.json
+.gitignore
+.eslintrc*
+.prettierrc*
+*.tsbuildinfo
+
+# Exclude IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Exclude OS files
+.DS_Store
+Thumbs.db
+
+# Exclude logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Exclude test files
+coverage/
+__tests__/
+*.test.ts
+*.test.tsx
+*.spec.ts
+*.spec.tsx

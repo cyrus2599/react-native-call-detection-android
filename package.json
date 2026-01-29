@@ -1,0 +1,63 @@
+{
+  "name": "react-native-call-detection-android",
+  "version": "1.1.0",
+  "description": "Real-time phone call detection for React Native (Android only) with Expo support",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "react-native": "src/index.ts",
+  "source": "src/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run build",
+    "clean": "rm -rf lib",
+    "test": "echo \"No tests specified\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RakeshPrasad28/react-native-call-detection-android.git"
+  },
+  "keywords": [
+    "react-native",
+    "call-detection",
+    "android",
+    "expo",
+    "phone-state",
+    "telephony",
+    "incoming-call",
+    "outgoing-call"
+  ],
+  "author": "Rakesh Prasad",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-native": ">=0.60.0",
+    "expo": ">=47.0.0"
+  },
+  "peerDependenciesMeta": {
+    "expo": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "@expo/config-plugins": "^7.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-native": "^0.72.0",
+    "react": "^18.2.0",
+    "react-native": "^0.73.0",
+    "typescript": "^5.3.0"
+  },
+  "files": [
+    "android/",
+    "src/",
+    "lib/",
+    "app.plugin.js",
+    "README.md"
+  ],
+  "bugs": {
+    "url": "https://github.com/RakeshPrasad28/react-native-call-detection-android/issues"
+  },
+  "homepage": "https://github.com/RakeshPrasad28/react-native-call-detection-android#readme"
+}
