@@ -27,21 +27,7 @@ const withCallDetection = (config) => {
         }
       });
     }
-
-    // Add READ_CALL_LOG permission for phone number access (optional, needed for some features)
-    const hasReadCallLog = permissions.some(
-      (permission) => 
-        permission.$?.['android:name'] === 'android.permission.READ_CALL_LOG'
-    );
-    
-    if (!hasReadCallLog) {
-      permissions.push({
-        $: {
-          'android:name': 'android.permission.READ_CALL_LOG'
-        }
-      });
-    }
-    
+        
     return config;
   });
 };

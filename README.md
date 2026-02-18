@@ -66,9 +66,6 @@ The package supports auto-linking, so after installation:
     
     <!-- Required for GSM call detection -->
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    
-    <!-- Optional: Required to get phone numbers (Android 10+) -->
-    <uses-permission android:name="android.permission.READ_CALL_LOG" />
 
     <application>
         ...
@@ -399,9 +396,6 @@ interface AudioFocusEvent {
 
 ### Required
 - `READ_PHONE_STATE` - Required for GSM call detection
-
-### Optional  
-- `READ_CALL_LOG` - Required on Android 10+ to access phone numbers
 
 > **Note:** Audio focus detection requires no special permissions!
 

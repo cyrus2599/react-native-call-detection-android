@@ -24,20 +24,6 @@ const withCallDetection: ConfigPlugin = (config) => {
         }
       });
     }
-
-    // Add READ_CALL_LOG permission for phone number access
-    const hasReadCallLog = permissions.some(
-      (permission: any) => 
-        permission.$?.['android:name'] === 'android.permission.READ_CALL_LOG'
-    );
-    
-    if (!hasReadCallLog) {
-      permissions.push({
-        $: {
-          'android:name': 'android.permission.READ_CALL_LOG'
-        }
-      });
-    }
     
     return config;
   });
